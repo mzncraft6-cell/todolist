@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+.container {
+  width: 90%;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#new-task {
+  position: relative;
+  background-color: #2600ff;
+  padding: 1.8em 1.25em;
+  border-radius: 0.3em;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+}
+
+#new-task input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 0.8em 0.5em;
+  color: #111111;
+  font-weight: 500;
+}
+#new-task input:focus {
+  outline: none;
+  border-color: #2c098a;
+}
+#new-task button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #008cff;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+#tasks {
+  background-color: #ffffff91;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 3.8em;
+  width: 100%;
+  border-radius: 0.6em;
+}
+.task {
+  background-color: #ffffff80;
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+
+.task {
+  background-color: #ffffffc7;
+  padding: 0.8em 1em;
+  margin-top: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #d1d3d4;
+  border-radius: 0.4em;
+  box-shadow: 0 0.3em 0.8em rgba(1, 24, 48, 0.08);
+  transition: 0.2s;
+}
+
+.task:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0.6em 1.2em rgba(1, 24, 48, 0.1);
+}
+
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: #111111;
+  font-weight: 500;
+  flex: 1;
+  word-break: break-word;
+}
+
+.task button {
+  background-color: #008cff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  padding: 0.4em 0.8em;
+  font-size: 0.9em;
+  margin-left: 0.4em;
+  transition: 0.2s;
+}
+
+.task button:hover {
+  background-color: #006fd1;
+}
